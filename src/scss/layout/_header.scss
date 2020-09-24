@@ -33,6 +33,8 @@
 
   &__subtitle {
     color: $color-white;
+    font-family: $font-main;
+    font-weight: normal; //ESTO ESTÁ PASANDO PORQUE HE IMPORTADO EN REGULAR Y BOLD --CHECK HOW TO FIX
     font-size: 16px; //= 1 rem
   }
   &__bottomArrow {
