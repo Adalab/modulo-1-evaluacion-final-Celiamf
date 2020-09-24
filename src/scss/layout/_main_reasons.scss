@@ -4,4 +4,19 @@
 
 .reasonsSection {
   background: crimson;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  background: darksalmon;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 45px;
+}
+
+.article {
+  background: darkkhaki;
 }
