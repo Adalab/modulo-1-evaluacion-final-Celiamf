@@ -23,14 +23,16 @@
 
   &__title {
     text-align: center;
-    color: white;
+    color: $color-white;
+    font-family: $font-title;
+    font-weight: bold; //NO FUNCIONA EL BOLDING
     font-size: 42px;
     margin: 0 25% 15px 25%;
     text-transform: uppercase;
   }
 
   &__subtitle {
-    color: white;
+    color: $color-white;
     font-size: 16px; //= 1 rem
   }
   &__bottomArrow {
