@@ -1,5 +1,51 @@
-.page__header {
+.header {
+  height: 568px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__menu {
+    background: #0271bc;
+    padding: 4px;
+    padding-top: 10px; //fix this - Must be centered & square
+    position: fixed;
+    top: 0;
+    left: 0;
+    &--link {
+      padding: 8px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    margin: 0 25% 15px 25%;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: white;
+    font-size: 16px; //= 1 rem
+  }
+  &__bottomArrow {
+    width: 45px;
+    height: 45px;
+    margin-top: 32px;
+    margin-bottom: 53px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--link {
+      padding: 8px;
+      margin-top: 4px;
+    }
+  }
 }
