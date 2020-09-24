@@ -2,11 +2,19 @@
 
 //El botón de flecha del footer debe enlazar al inicio de la página.
 
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+  background: darkcyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 45px;
+
+  &__menu {
+    margin-top: 30px;
+  }
+  //REVISAR ESTO
+  &__copy {
+    margin-top: 30px;
+  }
 }
