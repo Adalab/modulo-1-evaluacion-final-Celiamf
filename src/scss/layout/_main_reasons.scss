@@ -3,20 +3,73 @@
 //En el hover de los botones ("Go" y "3 Reasons To Purchase") se debe incluir una transición que dejamos a vuestra elección (por ejemplo: color, tamaño, etc.).
 
 .reasonsSection {
-  background: crimson;
+  background: $color-background-primary;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 30px 15px 60px 15px;
+
+  &__title {
+    text-transform: capitalize;
+    font-family: $font-title;
+    font-weight: bold;
+    //CONSIDER DOWNLOADING BOLD OR LEAVING
+    font-size: 24px;
+    margin-bottom: 45px;
+  }
+  &__button {
+    background-color: $color-buttons;
+    width: max-content;
+    padding: 10px;
+    // border: solid 2px $color-buttons;
+    border-radius: 22.5px;
+
+    &--link {
+      text-decoration: none;
+      color: $color-white;
+      font-weight: 500;
+      font-size: 20px;
+      //WHY WHY WHY
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      //WHY WHY WHY
+    }
+  }
+  &__linkToTop {
+    background: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 180%);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+
+    &--link {
+      padding: 5px;
+    }
+  }
 }
 
 .wrapper {
-  background: darksalmon;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 45px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 45px;
 }
 
 .article {
-  background: darkkhaki;
+  text-align: center;
+  font-size: 18px;
+  &__title {
+    font-family: $font-title;
+  }
+  &__copy {
+    line-height: 30px;
+  }
 }

@@ -3,10 +3,9 @@
 //En el hover de los botones ("Go" y "3 Reasons To Purchase") se debe incluir una transición que dejamos a vuestra elección (por ejemplo: color, tamaño, etc.).
 
 .intro {
-  padding: 30px 39px 60px 39px;
+  padding: 30px 15px 45px 15px;
 
   &__heading {
-    font-family: $font-main;
     font-weight: normal;
     color: $color-light;
     font-size: 14px;
@@ -14,14 +13,11 @@
 
   &__title {
     font-family: $font-title;
-    color: $color-primary;
     font-size: 24px;
-    margin-top: 1px;
+    margin-top: 5px;
     margin-bottom: 15px;
   }
   &__copy {
-    font-family: $font-main;
-    font-weight: normal;
     color: $color-secondary;
     font-size: 18px;
     line-height: 30px;
@@ -35,7 +31,6 @@
     margin-top: 30px;
     &--link {
       text-decoration: none;
-      font-family: $font-main;
       font-weight: 500;
       color: $color-buttons;
       //WHY WHY WHY
