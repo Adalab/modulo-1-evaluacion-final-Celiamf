@@ -1,45 +1,150 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Anonymous Proxy</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header class="header" id="pageTop">
+      <nav class="header__menu">
+        <a class="header__menu--link" href="https://adalab.es/" target="_blank"
+          ><img src="../assets/images/ico-menu.svg" alt="Menu icon"
+        /></a>
+      </nav>
+      <h1 class="header__title">Anonymous proxy</h1>
+      <h2 class="header__subtitle">In hac habitasse platea dictumst.</h2>
+      <div class="header__bottomArrow">
+        <a class="header__bottomArrow--link" href="#3reasons"
+          ><img src="../assets/images/ico-scroll-down.svg" alt="Menu icon"
+        /></a>
+      </div>
+    </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
+    <main>
+      <section class="intro">
+        <h4 class="intro__heading">Insomnia tips</h4>
+        <h2 class="intro__title">Looking through a window</h2>
+        <p class="intro__copy">
+          Donec accumsan, nulla ut volutpat portitor, quam odio tempus felis, at
+          luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+        </p>
+        <div class="intro__go">
+          <a
+            class="intro__go--link"
+            href="https://www.flickr.com/photos/76271965@N00/5108004537/"
+            target="_blank"
+            >Go</a
+          >
+          <!--Comprobar si sería mejor enlace o botón (ANIMACIÓN)-->
+        </div>
+      </section>
+
+      <section class="reasonsSection" id="3reasons">
+        <h2 class="reasonsSection__title">3 reasons to purchase</h2>
+
+        <div class="wrapper">
+          <article class="article article--1">
+            <h3 class="article__title">Ut sed metus</h3>
+            <p class="article__copy">Lorem ipsum dolor sit amet, consectetur</p>
+          </article>
+
+          <article class="article article--2">
+            <h3 class="article__title">Curabitur ac erat</h3>
+            <p class="article__copy">Mauris mattis urna quis lorem molestie.</p>
+          </article>
+
+          <article class="article article--3">
+            <h3 class="article__title">Morbi dictum</h3>
+            <p class="article__copy">Aliquam in dolor et dolor tincidunt</p>
+          </article>
+        </div>
+
+        <div class="reasonsSection__button">
+          <a
+            class="reasonsSection__button--link"
+            href="https://www.youtube.com/watch?v=YcitTNiIKwY&ab_channel=JABLESPANOL"
+            target="_blank"
+            >More reasons</a
+          >
+          <!--Comprobar si sería mejor enlace o botón (ANIMACIÓN)-->
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__linkToTop">
+        <a class="footer__linkToTop--link" href="#pageTop"
+          ><img src="../assets/images/ico-arrow.svg"
+        /></a>
+      </div>
+
+      <nav class="footer__menu footer__menu--1">
+        <ul class="footer__list">
+          <li>
+            <a class="footer__link" href="https://adalab.es/" target="_blank"
+              >Articles</a
+            >
+          </li>
+          <li>
+            <a class="footer__link" href="https://adalab.es/" target="_blank"
+              >Books</a
+            >
+          </li>
+          <li>
+            <a class="footer__link" href="https://adalab.es/" target="_blank"
+              >Events</a
+            >
+          </li>
+          <li>
+            <a class="footer__link" href="https://adalab.es/" target="_blank"
+              >Reasons</a
+            >
+          </li>
+          <li>
+            <a class="footer__link" href="https://adalab.es/" target="_blank"
+              >Tips</a
+            >
+          </li>
         </ul>
-      </main>
+      </nav>
+      <nav class="footer__menu footer__menu--2">
+        <ul class="footer__list">
+          <li>
+            <a class="footer__link" href="https://adalab.es/" target="_blank"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a class="footer__link" href="https://adalab.es/" target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a class="footer__link" href="https://adalab.es/" target="_blank"
+              >Mastodon.social</a
+            >
+            <!--REVISAR POR QUÉ PASA ESTO CON LAS ETIQUETAS-->
+          </li>
+        </ul>
+      </nav>
 
-      <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
+      <div class="footer__copy">
+        <p><small>&copy 2017</small></p>
+        <p>
+          <small>we <span class="footer__heart">❤</span> components</small>
+        </p>
+      </div>
+    </footer>
 
-      <a class="link__github" href="https://github.com" target="_blank">GitHub</a>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
-
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>
