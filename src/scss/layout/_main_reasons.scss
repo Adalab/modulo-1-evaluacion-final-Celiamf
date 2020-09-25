@@ -16,6 +16,12 @@
     //CONSIDER DOWNLOADING BOLD OR LEAVING
     font-size: 24px;
     margin-bottom: 45px;
+    @media all and (min-width: 768px) {
+      font-size: 26px;
+    }
+    @media all and (min-width: 1280px) {
+      font-size: 32px;
+    }
   }
   &__button {
     background-color: $color-buttons;
@@ -44,9 +50,22 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 45px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 24%;
+  margin-right: 24%;
   margin-bottom: 45px;
+
+  @media all and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 36px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  @media all and (min-width: 1280px) {
+    grid-gap: 45px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
 .article {
@@ -54,8 +73,17 @@
   font-size: 18px;
   &__title {
     font-family: $font-title;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      padding-bottom: 14px;
+    }
   }
-  &__copy {
+  &__text {
     line-height: 30px;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+      // margin-right: 20px;
+      // margin-left: 20px;
+    }
   }
 }
