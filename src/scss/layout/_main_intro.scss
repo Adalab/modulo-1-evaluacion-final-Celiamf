@@ -1,7 +1,3 @@
-//se puede maquetar usando las propiedades de CSS que se deseen
-
-//En el hover de los botones ("Go" y "3 Reasons To Purchase") se debe incluir una transición que dejamos a vuestra elección (por ejemplo: color, tamaño, etc.).
-
 .intro {
   padding: 30px 15px 45px 15px;
   @media all and (min-width: 768px) {
@@ -13,6 +9,7 @@
 
   &__heading {
     font-weight: normal;
+    text-transform: capitalize;
     color: $color-light;
     font-size: 14px;
   }

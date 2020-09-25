@@ -22,6 +22,10 @@
 
     &--link {
       padding: 5px;
+      animation-duration: 3s;
+      animation-name: arrow;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
     }
   }
 
@@ -77,5 +81,19 @@
   }
   &__heart {
     color: $color-buttons;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: rotate(-360deg);
+  }
+
+  25% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(0);
   }
 }
