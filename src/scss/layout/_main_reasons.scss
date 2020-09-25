@@ -37,20 +37,6 @@
       //WHY WHY WHY
     }
   }
-  &__linkToTop {
-    background: $color-white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(0, 180%);
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-
-    &--link {
-      padding: 5px;
-    }
-  }
 }
 
 .wrapper {
