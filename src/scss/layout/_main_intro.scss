@@ -29,7 +29,7 @@
       font-size: 32px;
     }
   }
-  &__copy {
+  &__text {
     color: $color-secondary;
     font-size: 18px;
     line-height: 30px;
@@ -38,26 +38,28 @@
     }
   }
 
-  &__go {
-    // width: min-content;
+  &__button {
     width: 76px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $color-buttons;
+    background: $color-white;
+    text-align: center;
+    border: solid 3px $color-buttons;
+    border-radius: 22.5px;
+    margin-top: 30px;
+    transition: color ease 1s, background-color ease 1s;
+    &:hover {
+      color: $color-white;
+      background-color: $color-buttons;
+      cursor: pointer;
+    }
     @media all and (min-width: 768px) {
       width: 91px;
     }
     @media all and (min-width: 1280px) {
       width: 160px;
-    }
-    padding: 5px 5px 5px 3px;
-    text-align: center;
-    border: solid 3px $color-buttons;
-    border-radius: 22.5px;
-    margin-top: 30px;
-    &--link {
-      font-size: 20px;
-      text-decoration: none;
-      font-weight: 500;
-      color: $color-buttons;
-      padding: 5px 20px 5px 20px;
     }
   }
 }
