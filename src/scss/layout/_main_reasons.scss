@@ -23,24 +23,34 @@
       font-size: 32px;
     }
   }
-  &__button {
-    background-color: $color-buttons;
-    width: max-content;
-    padding: 10px;
-    // border: solid 2px $color-buttons;
-    border-radius: 22.5px;
+  &__link {
+    text-decoration: none;
 
-    &--link {
-      text-decoration: none;
+    &--button {
+      width: 184px;
+      padding: 10px;
+      border: none;
+      border-radius: 22.5px;
+      background-color: $color-buttons;
+      font-family: $font-main;
       color: $color-white;
       font-weight: 500;
       font-size: 20px;
-      //WHY WHY WHY
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      //WHY WHY WHY
+      transition: color ease 1s, background-color ease 1s;
+      outline-color: $color-buttons;
+
+      &:hover {
+        color: $color-buttons;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      @media all and (min-width: 768px) {
+        width: 210px;
+      }
+      @media all and (min-width: 1280px) {
+        width: 255px;
+      }
     }
   }
 }

@@ -50,6 +50,7 @@
     border-radius: 22.5px;
     margin-top: 30px;
     transition: color ease 1s, background-color ease 1s;
+    outline-color: $color-buttons;
     &:hover {
       color: $color-white;
       background-color: $color-buttons;
