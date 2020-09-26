@@ -1,9 +1,22 @@
-.link__adalab:hover {
-  background-color: #099d8d;
-  color: #fff;
+//----------FOOTER---------//
+.footer__linkToTop--link {
+  padding: 5px;
+  animation-duration: 3s;
+  animation-name: arrow;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
-.link__github:hover {
-  background-color: #CCC;
-  color: #000;
+@keyframes arrow {
+  0% {
+    transform: rotate(-360deg);
+  }
+
+  25% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }
