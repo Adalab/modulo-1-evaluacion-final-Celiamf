@@ -1,8 +1,4 @@
-//los 3 elementos del listado deben estar maquetados con CSS Grid en todos los tamaños de pantalla.
-
-//En el hover de los botones ("Go" y "3 Reasons To Purchase") se debe incluir una transición que dejamos a vuestra elección (por ejemplo: color, tamaño, etc.).
-
-.reasonsSection {
+.reasons {
   background: $color-background-primary;
   display: flex;
   flex-direction: column;
@@ -23,35 +19,32 @@
       font-size: 32px;
     }
   }
-  &__link {
-    text-decoration: none;
 
-    &--button {
-      width: 184px;
-      padding: 10px;
-      border: none;
-      border-radius: 22.5px;
-      background-color: $color-buttons;
-      font-family: $font-main;
-      color: $color-white;
-      font-weight: 500;
-      font-size: 20px;
-      transition: color ease 1s, background-color ease 1s;
-      outline-color: $color-buttons;
-      margin-bottom: 20px;
+  &__button {
+    width: 184px;
+    padding: 10px;
+    border: none;
+    border-radius: 22.5px;
+    background-color: $color-buttons;
+    font-family: $font-main;
+    color: $color-white;
+    font-weight: 500;
+    font-size: 20px;
+    transition: color ease 1s, background-color ease 1s;
+    outline-color: $color-buttons;
+    margin-bottom: 20px;
 
-      &:hover {
-        color: $color-buttons;
-        background-color: transparent;
-        cursor: pointer;
-      }
+    &:hover {
+      color: $color-buttons;
+      background-color: transparent;
+      cursor: pointer;
+    }
 
-      @media all and (min-width: 768px) {
-        width: 210px;
-      }
-      @media all and (min-width: 1280px) {
-        width: 255px;
-      }
+    @media all and (min-width: 768px) {
+      width: 210px;
+    }
+    @media all and (min-width: 1280px) {
+      width: 255px;
     }
   }
 }
@@ -76,25 +69,5 @@
     grid-gap: 45px;
     margin-left: 15%;
     margin-right: 15%;
-  }
-}
-
-.article {
-  text-align: center;
-  font-size: 18px;
-  &__title {
-    font-family: $font-title;
-    @media all and (min-width: 768px) {
-      font-size: 24px;
-      padding-bottom: 14px;
-    }
-  }
-  &__text {
-    line-height: 30px;
-    @media all and (min-width: 768px) {
-      font-size: 20px;
-      // margin-right: 20px;
-      // margin-left: 20px;
-    }
   }
 }

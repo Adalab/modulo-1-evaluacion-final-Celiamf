@@ -1,0 +1,17 @@
+.article {
+  text-align: center;
+  font-size: 18px;
+  &__title {
+    font-family: $font-title;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      padding-bottom: 14px;
+    }
+  }
+  &__text {
+    line-height: 30px;
+    @media all and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+}

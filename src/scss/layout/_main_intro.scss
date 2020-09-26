@@ -46,11 +46,12 @@
     border: solid 3px $color-buttons;
     border-radius: 22.5px;
     margin-top: 30px;
-    transition: color ease 1s, background-color ease 1s;
-    outline-color: $color-buttons;
+    transition: color ease 1s, background-color ease 1s, border-radius 1s;
+    outline-color: darken($color-buttons, 15%);
     &:hover {
       color: $color-white;
       background-color: $color-buttons;
+      border-radius: 4px;
       cursor: pointer;
     }
     @media all and (min-width: 768px) {
