@@ -1,18 +1,9 @@
-//------CORE SCSS--------
-
 @import "core/variables";
 @import "core/reset";
-
-//------COMPONENTS SCSS--------
-
 @import "components/links";
-
-//------LAYOUT SCSS--------
 @import "layout/page";
 @import "layout/header";
 @import "layout/main_intro";
 @import "layout/main_reasons";
 @import "layout/reason";
 @import "layout/footer";
-
-// @import 'pages/index';
