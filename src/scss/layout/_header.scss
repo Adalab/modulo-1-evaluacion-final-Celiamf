@@ -6,31 +6,29 @@
   align-items: center;
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 
   &__menu {
-    background: #0271bc;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
+    width: 44px;
+    height: 44px;
+    background: $color-info;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &--link {
       padding: 10px;
     }
   }
 
   &__title {
+    margin: 0 20% 15px 20%;
     text-align: center;
     color: $color-white;
     font-family: $font-title;
-    // font-weight: bold; //NO FUNCIONA EL BOLDING
     font-size: 42px;
-    margin: 0 20% 15px 20%;
     text-transform: uppercase;
     @media all and (min-width: 768px) {
       font-size: 80px;
@@ -43,24 +41,24 @@
   &__subtitle {
     color: $color-white;
     font-family: $font-main;
-    font-weight: normal; //ESTO ESTÁ PASANDO PORQUE HE IMPORTADO EN REGULAR Y BOLD --CHECK HOW TO FIX
-    font-size: 16px; //= 1 rem
+    font-weight: normal;
+    font-size: 1rem;
     @media all and (min-width: 768px) {
       font-size: 24px;
     }
   }
-  &__bottomArrow {
+  &__arrow {
     width: 45px;
     height: 45px;
     margin-top: 32px;
     margin-bottom: 53px;
-    background: white;
+    background: $color-white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     &--link {
-      padding: 8px;
+      padding: 10px;
       margin-top: 4px;
     }
   }

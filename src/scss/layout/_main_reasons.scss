@@ -8,9 +8,8 @@
   &__title {
     text-transform: capitalize;
     font-family: $font-title;
-    font-weight: bold;
-    //CONSIDER DOWNLOADING BOLD OR LEAVING
     font-size: 24px;
+    font-weight: bold;
     margin-bottom: 45px;
     @media all and (min-width: 768px) {
       font-size: 26px;
@@ -20,22 +19,45 @@
     }
   }
 
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 45px;
+    margin-left: 24%;
+    margin-right: 24%;
+    margin-bottom: 45px;
+
+    @media all and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 36px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    @media all and (min-width: 1280px) {
+      grid-gap: 45px;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  }
+
   &__button {
     width: 184px;
     padding: 10px;
     border: none;
     border-radius: 22.5px;
-    background-color: $color-buttons;
-    font-family: $font-main;
-    color: $color-white;
-    font-weight: 500;
+    background-color: $color-tertiary;
     font-size: 20px;
-    transition: color ease 1s, background-color ease 1s;
-    outline-color: $color-buttons;
+    font-family: $font-main;
+    font-weight: 500;
+    color: $color-white;
+    outline-color: $color-tertiary;
     margin-bottom: 20px;
+    transition: color ease 1s, background-color ease 1s;
 
     &:hover {
-      color: $color-buttons;
+      color: $color-tertiary;
       background-color: transparent;
       cursor: pointer;
     }
@@ -46,28 +68,5 @@
     @media all and (min-width: 1280px) {
       width: 255px;
     }
-  }
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 45px;
-  margin-left: 24%;
-  margin-right: 24%;
-  margin-bottom: 45px;
-
-  @media all and (min-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 36px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  @media all and (min-width: 1280px) {
-    grid-gap: 45px;
-    margin-left: 15%;
-    margin-right: 15%;
   }
 }

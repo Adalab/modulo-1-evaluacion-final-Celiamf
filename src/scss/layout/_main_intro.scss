@@ -4,11 +4,10 @@
     padding: 30px 10% 60px 10%;
   }
   @media all and (min-width: 1280px) {
-    padding: 60px 25% 60px 25%;
+    padding: 60px 25%;
   }
 
   &__heading {
-    font-weight: normal;
     text-transform: capitalize;
     color: $color-light;
     font-size: 14px;
@@ -40,17 +39,17 @@
     height: 45px;
     font-size: 20px;
     font-weight: 500;
-    color: $color-buttons;
+    color: $color-tertiary;
     background: $color-white;
     text-align: center;
-    border: solid 3px $color-buttons;
+    border: solid 3px $color-tertiary;
     border-radius: 22.5px;
     margin-top: 30px;
     transition: color ease 1s, background-color ease 1s, border-radius 1s;
-    outline-color: darken($color-buttons, 15%);
+    outline-color: darken($color-tertiary, 15%);
     &:hover {
       color: $color-white;
-      background-color: $color-buttons;
+      background-color: $color-tertiary;
       border-radius: 4px;
       cursor: pointer;
     }

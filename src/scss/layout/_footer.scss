@@ -1,6 +1,5 @@
 .footer {
   background: $color-background-secondary;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,10 +13,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(0, -50%);
-    border-radius: 50%;
     width: 45px;
     height: 45px;
+    border-radius: 50%;
+    transform: translate(0, -50%);
     line-height: 0;
 
     &--link {
@@ -29,7 +28,7 @@
     }
   }
 
-  &__content {
+  &__container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -51,12 +50,10 @@
   &__menu {
     margin-top: 30px;
     text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
     @media all and (min-width: 768px) {
       text-align: left;
-    }
-    &--1 {
-      padding-left: 100px;
-      padding-right: 100px;
     }
   }
 
@@ -70,20 +67,22 @@
     text-transform: uppercase;
   }
 
-  // REVISAR ESTE ANIDADO
   &__copy {
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    margin: 30px 50px 45px 25px;
     @media all and (min-width: 768px) {
       text-align: left;
       order: -1;
     }
-  }
-  &__heart {
-    color: $color-buttons;
+    &--heart {
+      color: $color-tertiary;
+    }
   }
 }
 
+//----------ARROW ANIMATION-------------
 @keyframes arrow {
   0% {
     transform: rotate(-360deg);
