@@ -11,13 +11,16 @@
 
   &__menu {
     background: #0271bc;
-    padding: 4px;
-    padding-top: 10px; //fix this - Must be centered & square
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     &--link {
-      padding: 8px;
+      padding: 10px;
     }
   }
 
